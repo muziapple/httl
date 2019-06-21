@@ -24,7 +24,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Context. (API, Prototype, ThreadLocal, ThreadSafe)
+ * Context. (API, Prototype, ThreadLocal, ThreadSafe) 线程栈内无竞争使用，请不要跨线程传递
  * 
  * <pre>
  * Context context = Context.getContext();

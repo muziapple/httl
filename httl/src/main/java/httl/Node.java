@@ -28,7 +28,7 @@ import java.text.ParseException;
 public interface Node {
 
 	/**
-	 * Accept a visitor.
+	 * Accept a visitor.访问语法树
 	 * 
 	 * @param visitor
 	 * @throws IOException - If an I/O error occurs

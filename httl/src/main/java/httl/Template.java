@@ -22,7 +22,7 @@ import java.util.Map;
 
 /**
  * Template. (API, Prototype, Immutable, ThreadSafe)
- * 
+ * 热加载将产生不同实例
  * <pre>
  * Engine engine = Engine.getEngine();
  * Template template = engine.getTemplate("/foo.httl");
@@ -92,7 +92,7 @@ public interface Template extends Node, Resource {
 	void render() throws IOException, ParseException;
 
 	/**
-	 * Evaluate the template.
+	 * Evaluate the template.基于参数求值模板内容
 	 * 
 	 * <pre>
 	 * Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;();
