@@ -31,7 +31,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * HttlFilter. (Integration, Singleton, ThreadSafe)
- * 
+ * 业务Servlet执行后，从模板目录下读取与请求path同名，后缀换成.httl的模板，然后以request中的变量进行渲染
  * @author Liang Fei (liangfei0201 AT gmail DOT com)
  */
 public class HttlFilter implements Filter {

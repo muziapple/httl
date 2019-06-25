@@ -27,7 +27,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * HttlServlet. (Integration, Singleton, ThreadSafe)
- * 
+ * 处理forward到*.httl的请求 ，但会多次渲染httlServlet一次，filter一次
  * @author Liang Fei (liangfei0201 AT gmail DOT com)
  */
 public class HttlServlet extends HttpServlet {
