@@ -23,6 +23,9 @@ import java.util.Map;
 /**
  * Template. (API, Prototype, Immutable, ThreadSafe)
  * 热加载将产生不同实例
+ * Template是模板，相关method定义在其中
+ * Template是树的一个节点Node，相关method定义在其中
+ * Template也是一个资源，相关method定义在其中
  * <pre>
  * Engine engine = Engine.getEngine();
  * Template template = engine.getTemplate("/foo.httl");
