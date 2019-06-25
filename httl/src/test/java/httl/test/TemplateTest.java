@@ -59,7 +59,7 @@ import org.junit.runners.Parameterized.Parameters;
 
 /**
  * TemplateTest
- * 
+ * 自动扫描和执行templates下的所有模板，并用results下的同名加.txt后缀的文件内容断言输出
  * @author Liang Fei (liangfei0201 AT gmail DOT com)
  * @author Jerry Lee (oldratlee AT gmail DOT com)
  */
