@@ -30,7 +30,7 @@ import java.util.Properties;
 /**
  * BeanFactory. (Tool, Static, ThreadSafe)
  * 
- * 该BeanFactory是一个仿Spring的轻量级“IoC+AOP”容器。
+ * 该BeanFactory是一个仿Spring的轻量级“IoC+AOP”容器。作为组装微核,负责基于统一规则的组装，但不带功能逻辑. 功能性的组装是httl.DefaultEngine
  * 
  * IoC: 基于Setter递归注入属性，如：
  * 
