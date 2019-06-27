@@ -16,8 +16,10 @@
 package httl.spi;
 
 /**
- * Variable Resolver. (SPI, Singleton, ThreadSafe)
- * 
+ * Variable Resolver. (SPI, Singleton, ThreadSafe)渲染模板过程
+ * 1.4.1.1模板中的变量，均从Context中读取
+ *   Context --> parent Context
+ *   root Context --> Resolver
  * @author Liang Fei (liangfei0201 AT gmail DOT com)
  */
 public interface Resolver {

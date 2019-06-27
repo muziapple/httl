@@ -17,7 +17,8 @@ package httl.spi;
 
 /**
  * Text Filter. (SPI, Singleton, ThreadSafe)
- * 
+ * 获取模板过程 1.3.2 并对静态文本进行编译前过滤，比如删除空白等
+ * 渲染模板过程 1.6 再通过Filter，过虑输出String的XML特殊符等
  * @see httl.spi.translators.CompiledTranslator#setTemplateFilter(Filter)
  * @see httl.spi.translators.CompiledTranslator#setTextFilter(Filter)
  * @see httl.spi.translators.CompiledTranslator#setValueFilter(Filter)

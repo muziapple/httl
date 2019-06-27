@@ -16,8 +16,8 @@
 package httl.spi;
 
 /**
- * Value Formatter. (SPI, Singleton, ThreadSafe)
- * 
+ * Value Formatter. (SPI, Singleton, ThreadSafe) 渲染模板过程
+ * 1.5将值对象转成String
  * @see httl.spi.translators.CompiledTranslator#setFormatter(Formatter)
  * @see httl.spi.translators.InterpretedTranslator#setFormatter(Formatter)
  * 

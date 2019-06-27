@@ -21,8 +21,8 @@ import java.io.IOException;
 import java.text.ParseException;
 
 /**
- * Template Parser. (SPI, Singleton, ThreadSafe)
- * 
+ * Template Parser. (SPI, Singleton, ThreadSafe) 获取模板过程
+ * 1.3.1 转换的第一步是将模板解析成AST抽象语法树
  * @see httl.spi.engines.DefaultEngine#setTemplateParser(Parser)
  * 
  * @author Liang Fei (liangfei0201 AT gmail DOT com)

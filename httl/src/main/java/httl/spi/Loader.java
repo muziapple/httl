@@ -22,8 +22,8 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * Resource Loader. (SPI, Singleton, ThreadSafe)
- * 
+ * Resource Loader. (SPI, Singleton, ThreadSafe) 获取模板过程
+ * 1.2则加载模板源文件为Resource对象
  * @see httl.spi.engines.DefaultEngine#setLoader(Loader)
  * 
  * @author Liang Fei (liangfei0201 AT gmail DOT com)

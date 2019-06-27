@@ -25,7 +25,7 @@ import java.util.Set;
 
 /**
  * Context. (API, Prototype, ThreadLocal, ThreadSafe) 线程栈内无竞争使用，请不要跨线程传递
- * 
+ * 1.2将变量Map压入Context栈
  * <pre>
  * Context context = Context.getContext();
  * Object value = context.get(key);

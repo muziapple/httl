@@ -20,8 +20,8 @@ import java.text.ParseException;
 import java.util.Map;
 
 /**
- * Object Converter. (SPI, Singleton, ThreadSafe)
- * 
+ * Object Converter. (SPI, Singleton, ThreadSafe) 渲染模板过程
+ * 1.1将非Map变量对象转换成Map，将非Writer或OutputStream输出对象转成Writer或OutputStream
  * @see httl.spi.translators.CompiledTranslator#setMapConverter(Converter)
  * @see httl.spi.translators.InterpretedTranslator#setMapConverter(Converter)
  * @see httl.spi.translators.CompiledTranslator#setOutConverter(Converter)

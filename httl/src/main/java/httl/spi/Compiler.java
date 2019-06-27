@@ -18,8 +18,8 @@ package httl.spi;
 import java.text.ParseException;
 
 /**
- * Java Compiler. (SPI, Singleton, ThreadSafe)
- * 
+ * Java Compiler. (SPI, Singleton, ThreadSafe) 获取模板过程
+ * 1.3.3 对解析后的Java代码进行编译，得到具体模板实现类
  * @see httl.spi.translators.CompiledTranslator#setCompiler(Compiler)
  * 
  * @author Liang Fei (liangfei0201 AT gmail DOT com)

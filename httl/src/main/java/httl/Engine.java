@@ -32,7 +32,7 @@ import java.util.concurrent.ConcurrentMap;
 
 /**
  * Engine. (API, Singleton, Immutable, ThreadSafe)
- * 
+ * 相当于微内核，只管理非功能性的扩展点的加载，不硬编码模板加载, 解析, 渲染的任何部分。
  * <pre>
  * Engine engine = Engine.getEngine();
  * </pre>

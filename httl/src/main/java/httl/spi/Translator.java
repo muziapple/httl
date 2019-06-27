@@ -24,8 +24,8 @@ import java.text.ParseException;
 import java.util.Map;
 
 /**
- * Template Translator. (SPI, Singleton, ThreadSafe)
- * 
+ * Template Translator. (SPI, Singleton, ThreadSafe) 获取模板过程
+ * 1.3通过转换器(分为编译和解释两种)，将Resource转换成Template
  * @see httl.spi.engines.DefaultEngine#setTranslator(Translator)
  * 
  * @author Liang Fei (liangfei0201 AT gmail DOT com)

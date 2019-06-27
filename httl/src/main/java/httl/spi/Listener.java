@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.text.ParseException;
 
 /**
- * Render Listener. (SPI, Singleton, ThreadSafe)
+ * Render Listener. (SPI, Singleton, ThreadSafe)渲染模板过程
  * 
  * @see httl.spi.Interceptor#render(Context, Listener)
  * @see httl.spi.interceptors.ListenerInterceptor#setBeforeListener(Listener)
@@ -33,7 +33,7 @@ public interface Listener {
 
 	/**
 	 * On template render.
-	 * 
+	 * 1.3.1.1 Listener回调模板的doRender方法，执行实际渲染过程
 	 * @param context - render context
 	 * @throws IOException - If an I/O error occurs
 	 * @throws ParseException - If the template cannot be parsed on runtime

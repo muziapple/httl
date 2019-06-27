@@ -21,8 +21,8 @@ import java.io.IOException;
 import java.text.ParseException;
 
 /**
- * Render Interceptor. (SPI, Singleton, ThreadSafe)
- * 
+ * Render Interceptor. (SPI, Singleton, ThreadSafe)渲染模板过程
+ * 1.3实际渲染过程封装成Listener，传给拦截器执行
  * @see httl.spi.translators.CompiledTranslator#setInterceptor(Interceptor)
  * @see httl.spi.translators.InterpretedTranslator#setInterceptor(Interceptor)
  * 
@@ -32,7 +32,7 @@ public interface Interceptor {
 
 	/**
 	 * Intercept the template rendition.
-	 * 
+	 * 1.3.1拦截器执行完拦截逻辑后，调用拦截时传入的Listener
 	 * @param context - render context
 	 * @param listener - render listener.
 	 * @throws IOException - If an I/O error occurs
