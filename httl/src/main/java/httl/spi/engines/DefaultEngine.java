@@ -50,15 +50,9 @@ import java.util.concurrent.ConcurrentMap;
 
 /**
  * DefaultEngine. (SPI, Singleton, ThreadSafe)
- * 
  * 非功能性组装微核是httl.BeanFactory
- * 
  * 功能性的组装过程插件/大插件(组装SPI这些小插件) {{之所以能被替换是因为Engine(abstract)在根据配置实例化具体引擎}}
- * 
- * 
- * 
  * @see httl.Engine#getEngine()
- * 
  * @author Liang Fei (liangfei0201 AT gmail DOT com)
  */
 public class DefaultEngine extends Engine {
