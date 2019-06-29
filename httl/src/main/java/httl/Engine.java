@@ -114,16 +114,16 @@ public abstract class Engine {
 		if (reference == null) {
 			reference = new VolatileReference<Engine>(); // quickly
 			VolatileReference<Engine> old = ENGINES.putIfAbsent(configPath, reference);
-			if (old != null) { // duplicate
+			if (old != null) { // duplicate,相同configPath的VolatileReference被其他线程先一步放入了
 				reference = old;
 			}
 		}
 		assert(reference != null);
 		Engine engine = reference.get();
-		if (engine == null) {
+		if (engine == null) {//获得锁之前engine为null
 			synchronized (reference) { // reference lock
 				engine = reference.get();
-				if (engine == null) { // double check
+				if (engine == null) { // double check 获得锁之后再次判断GOOD(有可能在获得reference锁之前Engine被其他线程初始化好了),为了保证单例Engine
 					engine = BeanFactory.createBean(Engine.class, initProperties(configPath, configProperties)); // slowly
 					reference.set(engine);
 				}

@@ -185,9 +185,9 @@ public class DefaultEngine extends Engine {
 			return parseTemplate(null, name, locale, encoding, args);
 		}
 		Resource resource = null;
-		long lastModified;
+		long lastModified;//modify time of Resource
 		if (reloadable) {
-			resource = loadResource(name, locale, encoding);
+			resource = loadResource(name, locale, encoding);//只new一个并未真正读取
 			lastModified = resource.getLastModified();
 		} else {
 			lastModified = Long.MIN_VALUE;
