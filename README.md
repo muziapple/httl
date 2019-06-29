@@ -1,7 +1,8 @@
 * **Bug List**
-   * ConfigUtils.WINDOWS_FILE_PATTERN
+   * ConfigUtils.WINDOWS_FILE_PATTERN 前缀判断pattern不对
+   * InterpretedVisitor.breakVariable NPE
 
-* **Core Improvement**现在还一个都看不懂
+* **Core Improvement**
    * 解释执行与编译执才的自动切换，类似于JVM的JIT。
    * 完整的泛型推导，和Java的泛型推导相同。
    * 生成字节码细节上的优化，比如减少instanceof，减少反射，减少装箱。

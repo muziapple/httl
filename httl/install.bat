@@ -1,0 +1,1 @@
+mvn install -Dmaven.test.skip -Dmaven.javadoc.skip=true

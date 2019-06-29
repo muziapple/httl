@@ -17,7 +17,7 @@ package httl.util;
 
 public class VolatileReference<T> {
 
-	private volatile T value;
+	private volatile T value;//易变变量，强制更新主内存，轻量线程同步，不用竞争锁
 
 	public T get() {
 		return value;

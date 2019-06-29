@@ -118,7 +118,7 @@ public class InterpretedVisitor extends AstVisitor {
 
 	private String ifVariable;
 
-	private String breakVariable;
+	private String breakVariable = "break";
 
 	private String outputEncoding;
 
